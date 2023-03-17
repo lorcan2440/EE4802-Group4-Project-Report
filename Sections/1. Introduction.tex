@@ -1,0 +1,13 @@
+Test
+
+\begin{verbatim}
+import numpy as np
+import pandas as pd
+from matplotlib import pyplot as plt
+
+import tensorflow as tf
+import tensorflow.keras as keras
+import keras_tuner
+\end{verbatim}
+
+$$ L(\mathbf{y}, \mathbf{\hat{y}}) = \lambda \underbrace{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}_{\substack{\textup{sum of squared} \\ \textup{errors}}} + \underbrace{ \frac{1}{2} \sum_{j\geq 1}^{} |w_j|^2}_{\substack{L_2 \ \textup{ridge regression} \\ \textup{(regularisation)}}} $$
