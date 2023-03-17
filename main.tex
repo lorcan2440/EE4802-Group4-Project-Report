@@ -1,0 +1,87 @@
+% Importing packages and setting up the document
+\documentclass[11pt, a4paper]{article}
+\usepackage[a4paper, total={6.3in, 8.7in}]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref} %hides green boxes
+\usepackage{subcaption}
+
+% Referencing packages
+\usepackage{natbib}
+\usepackage{hyperref}
+
+% 4 lines below are to prevent hyphenation at end of line:
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% New paragraph style: whitespace instead of indent:
+\usepackage[parfill]{parskip}
+
+% presenting code package
+\usepackage{listings}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% END OF PARAMETER SETTING. DOCUMENT STARTS BELOW %%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+    \vspace*{1cm}
+    \Large{\textbf{EE4802/IE4213}}\\[2mm]
+    \Large{Learning from Data}
+    \vfill
+    \begin{figure}[http]
+        \centering
+        \includegraphics[width=11cm]{Figures/NUS_Logo.jpg}
+    \end{figure}
+    \vfill
+    \line(1,0){450}\\[1mm]
+    \Large{- Group 4 -\\ TITLE OF THE PROJECT}
+    \line(1,0){450}
+    \vfill
+    Alina Nathalie Arranhado – A0268023J\\
+    Lorcan Nicholls – A0261295B \\
+    Full Name – Student ID \\
+    Full Name – Student ID\\
+    \today \\
+\end{center}
+\end{titlepage}
+
+\newpage
+
+\section{Introduction}
+\label{Sec: Introduction}
+\input{Sections/1. Introduction}
+
+\section{Methodology}
+\label{Sec: Methodology}
+\input{Sections/2. Methodology}
+
+\section{Results}
+\label{Sec: Results}
+\input{Sections/3. Results}
+
+\section{Discussion}
+\label{Sec: Discussion}
+\input{Sections/4. Discussion}
+
+\newpage
+\bibliographystyle{apalike}
+\bibliography{References}
+
+% introduction of appendices, maybe needed
+
+% \newpage
+% \section*{Appendices}
+% \appendix
+% \section{...}\label{Sec: Appendix A}
+% \input{Sections/Appendix A.tex}
+
+\end{document}
